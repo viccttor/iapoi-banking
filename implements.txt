@@ -1,0 +1,61 @@
+Pendentes
+
+* Implementar
+
+	- Criar duas contas(Corrente e poupança)
+	- Colocar a documentação do Swagger(pacote doc no projeto)
+
+
+* Tratamentos de erros 
+	-
+	
+* Testes JUnit 
+	- ContaService
+	- MovimentacaoService
+	- ClienteService
+	- EnderecoService
+	
+
+
+* MELHORIAS MÉTODOS
+	- FORMATAR EMAIL PARA INSERÇÃO DE UM EMAIL TIPO( "SDá@GAMIL.COM") )
+	- A cada tentativa mal sucessecidade de inserção de um unique já cadastrado
+pula a sequencia da primary key
+	- A String do movimentação vira um comprovante que é salvo no banco e é
+listado nas movimentações oa invés da json;
+
+* Concluídos
+
+* Lombok - ok
+* Criar uma conta Corrente ou Poupança - ok
+* Validação CPF
+* Testes Unitários utilizando o JUnit5(Remover caracteres, ValidarCPF)
+* A Poupança não pode realizar movimentação(salvo rendimento, 
+que será adicionado na próxima Sptint) - ok
+* Criar o resgate poupança - Retirar todo o saldo e deixa a conta zerada
+* Status da Conta - Ativo ou inativo(Só pode desativar após a conta estar zerada) 
+	
+* MELHORIAS MÉTODOS
+	- Mudar de void par String
+
+	
+
+* Tratamento de erros 
+	- Poupança não tem despesa
+	- Receita com saldo negativo
+	- Despesa com valor negativo, somando no db
+	- ALTERAR ENDERECO
+	- CADASTRO DO TERCEIRO CLIENTE
+	- DA UM TRATO NO "COMPROVANTE DE TRANSAÇÃO" AUMENTA OS ESPAÇOS E %.2F VALOR
+	- Saque em conta zerada
+	- Transferência com conta negativada
+	- MOVIMENTAÇÃO ENTRE CONTA INEXISTENTE - rETORNAR QUE CONTA NÃO EXISTE
+	- SALDO ERRO 404
+	
+
+
+
+
+
+
+
