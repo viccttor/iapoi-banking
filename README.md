@@ -14,23 +14,25 @@
 * JUnit5
 * Intellij
 
-##  Principais Mudanças
+##  Funcionalidades
 
-* Ferramentas
-  * Utilização da IDEA Intelij
-* Tecnologias
-  * Lombok
-  * Testes Unitários utilizando o JUnit5
-* Conta
+* Cadastros - Cliente (endereco e Conta)
   * Opções de Conta - Corrente ou Poupança 
-  * Status da Conta - Ativa ou Inativa
-  * A Poupança não pode realizar movimentação(salvo RECEITA OU Regaste)
-* Cadastros
-  * Validação de CPF no cadastro
+  * Alteracao de endereco 
   * CPF, e-mail e telefone - São únicos por cliente
-* Métodos
-  * Refatoração dos métodos para retornar String para o usuário
-  *  Tratamentos de erros (Corrigir)
+  * Validação de CPF no cadastro
+* Movimentação 
+  * Receita
+  * Despesa
+  * Pagamento
+  * Despósito
+  * Saque
+  * Trasnferência entre contas
+  * Resgate de conta
+  * A Poupança não pode realizar movimentação(salvo RECEITA OU Regaste)
+* Listar - Conta, saldo, cliente e movimentações
+   * Buscas por id e cpf
+
 
 
 ## 📝 Diagrama de classes
@@ -72,9 +74,10 @@ POST   | /entre-contas               | Gerar uma transferência entre contas |
 GET    | /movimentacoes-por-conta    | Listar movimentações por id          |
 GET    | /listar-todas-movimentacoes | Listar todas as movimentações        |
 
-### URL para Swagger 
+### URL Local
 http://localhost:8080/iapoi-banking-api/swagger-ui/index.html#/apps/cliente
 
+### URL online
 <div>
  <a href="https://iapoi-banking.herokuapp.com/iapoi-banking-api/swagger-ui/index.html" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" target="_blank"></a> 
 </div>
